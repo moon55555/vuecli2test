@@ -24,10 +24,18 @@
 <!--            图标-->
             <i class="el-icon-location"></i>
 <!--            文本-->
-            <span>监测设备管理</span>
+            <span>功能模块</span>
           </template>
 <!--         二级菜单-->
-          <el-menu-item index="1-4-1">
+          <el-submenu index="1-1">
+          <template slot="title">
+            <!--            图标-->
+            <i class="el-icon-location"></i>
+            <!--            文本-->
+            <span>监测设备管理</span>
+          </template>
+          <!--            三级菜单-->
+          <el-menu-item index="1-1-1">
             <template slot="title">
               <!--            图标-->
               <i class="el-icon-location"></i>
@@ -35,7 +43,7 @@
               <span>测点管理</span>
             </template>
           </el-menu-item>
-          <el-menu-item index="1-4-2">
+          <el-menu-item index="1-1-2">
             <template slot="title">
               <!--            图标-->
               <i class="el-icon-location"></i>
@@ -44,16 +52,15 @@
             </template>
           </el-menu-item>
         </el-submenu>
-        <el-submenu index="2">
-          <!--一级菜单的模板区域-->
-          <template slot="title">
-            <!--            图标-->
-            <i class="el-icon-location"></i>
-            <!--            文本-->
-            <span>监测数据管理</span>
-          </template>
-          <!--         二级菜单-->
-          <el-menu-item index="2-4-1">
+          <el-submenu index="1-2">
+            <template slot="title">
+              <!--            图标-->
+              <i class="el-icon-location"></i>
+              <!--            文本-->
+              <span>监测数据管理</span>
+            </template>
+            <!--            三级菜单-->
+            <el-menu-item index="1-2-1">
             <template slot="title">
               <!--            图标-->
               <i class="el-icon-location"></i>
@@ -61,14 +68,75 @@
               <span>监测数据展示</span>
             </template>
           </el-menu-item>
-          <el-menu-item index="2-4-2">
+            <el-menu-item index="1-2-2">
+              <template slot="title">
+                <!--            图标-->
+                <i class="el-icon-location"></i>
+                <!--            文本-->
+                <span>数据分析</span>
+              </template>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="1-3">
             <template slot="title">
               <!--            图标-->
               <i class="el-icon-location"></i>
               <!--            文本-->
-              <span>数据分析</span>
+              <span>预警阈值管理</span>
             </template>
-          </el-menu-item>
+            <!--            三级菜单-->
+            <el-menu-item index="1-3-1">
+              <template slot="title">
+                <!--            图标-->
+                <i class="el-icon-location"></i>
+                <!--            文本-->
+                <span>设置不同值</span>
+              </template>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="1-4">
+            <template slot="title">
+              <!--            图标-->
+              <i class="el-icon-location"></i>
+              <!--            文本-->
+              <span>警情数据管理</span>
+            </template>
+            <!--            三级菜单-->
+            <el-menu-item index="1-4-1">
+              <template slot="title">
+                <!--            图标-->
+                <i class="el-icon-location"></i>
+                <!--            文本-->
+                <span>警情数据管理</span>
+              </template>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="1-5">
+            <template slot="title">
+              <!--            图标-->
+              <i class="el-icon-location"></i>
+              <!--            文本-->
+              <span>用户管理</span>
+            </template>
+            <!--            三级菜单-->
+            <el-menu-item index="1-1-1">
+              <template slot="title">
+                <!--            图标-->
+                <i class="el-icon-location"></i>
+                <!--            文本-->
+                <span>超级管理员</span>
+              </template>
+            </el-menu-item>
+          </el-submenu>
+        </el-submenu>
+        <el-submenu index="2">
+          <!--一级菜单的模板区域-->
+          <template slot="title">
+            <!--            图标-->
+            <i class="el-icon-location"></i>
+            <!--            文本-->
+            <span>图层</span>
+          </template>
         </el-submenu>
         <el-submenu index="3">
           <!--一级菜单的模板区域-->
@@ -76,53 +144,8 @@
             <!--            图标-->
             <i class="el-icon-location"></i>
             <!--            文本-->
-            <span>预警阈值管理</span>
+            <span>监测数据</span>
           </template>
-          <!--         二级菜单-->
-          <el-menu-item index="3-4-1">
-            <template slot="title">
-              <!--            图标-->
-              <i class="el-icon-location"></i>
-              <!--            文本-->
-              <span>设置不同值</span>
-            </template>
-          </el-menu-item>
-        </el-submenu>
-        <el-submenu index="4">
-          <!--一级菜单的模板区域-->
-          <template slot="title">
-            <!--            图标-->
-            <i class="el-icon-location"></i>
-            <!--            文本-->
-            <span>警情数据管理</span>
-          </template>
-          <!--         二级菜单-->
-          <el-menu-item index="4-4-1">
-            <template slot="title">
-              <!--            图标-->
-              <i class="el-icon-location"></i>
-              <!--            文本-->
-              <span>警情数据管理</span>
-            </template>
-          </el-menu-item>
-        </el-submenu>
-        <el-submenu index="5">
-          <!--一级菜单的模板区域-->
-          <template slot="title">
-            <!--            图标-->
-            <i class="el-icon-location"></i>
-            <!--            文本-->
-            <span>用户管理</span>
-          </template>
-          <!--         二级菜单-->
-          <el-menu-item index="5-4-1">
-            <template slot="title">
-              <!--            图标-->
-              <i class="el-icon-location"></i>
-              <!--            文本-->
-              <span>超级管理员</span>
-            </template>
-          </el-menu-item>
         </el-submenu>
       </el-menu>
     </el-aside>
